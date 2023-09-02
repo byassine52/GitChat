@@ -192,6 +192,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
+				ORGANIZATIONNAME = ElBadaoui;
 				TargetAttributes = {
 					C2165A142AA33A280030822B = {
 						CreatedOnToolsVersion = 14.3.1;
