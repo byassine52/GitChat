@@ -54,6 +54,10 @@
 		C2AB88292AA447EE00164809 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C2AB882C2AA447EE00164809 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		C2AB882D2AA447EE00164809 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		C2AB88362AA449F500164809 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		C2AB88372AA449F500164809 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C2AB88382AA449F500164809 /* .editorconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .editorconfig; sourceTree = "<group>"; };
+		C2AB88392AA449F500164809 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				C2165A282AA33A290030822B /* GitChatTests */,
 				C2165A322AA33A290030822B /* GitChatUITests */,
 				C2165A162AA33A280030822B /* Products */,
+				C2AB88352AA449C300164809 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +202,17 @@
 				C2AB882D2AA447EE00164809 /* Assets.swift */,
 			);
 			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		C2AB88352AA449C300164809 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB88382AA449F500164809 /* .editorconfig */,
+				C2AB88392AA449F500164809 /* .gitignore */,
+				C2AB88372AA449F500164809 /* .swiftlint.yml */,
+				C2AB88362AA449F500164809 /* swiftgen.yml */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C2EBAD6F2AA37C1700611E2A /* Models */ = {
