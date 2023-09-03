@@ -3,11 +3,13 @@
 //  GitChatUITests
 //
 //  Created by Yassine ElBadaoui on 2023/09/02.
+//  Copyright © 2023 ElBadaoui. All rights reserved.
 //
 
 import XCTest
 
 final class GitChatUITestsLaunchTests: XCTestCase {
+	// swiftlint:disable:previous balanced_xctest_lifecycle
 
 	override class var runsForEachTargetApplicationUIConfiguration: Bool {
 		true

@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C2165A192AA33A280030822B /* GitChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2165A182AA33A280030822B /* GitChatApp.swift */; };
-		C2165A1B2AA33A280030822B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2165A1A2AA33A280030822B /* ContentView.swift */; };
 		C2165A1D2AA33A290030822B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2165A1C2AA33A290030822B /* Assets.xcassets */; };
 		C2165A202AA33A290030822B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2165A1F2AA33A290030822B /* Preview Assets.xcassets */; };
 		C2165A2A2AA33A290030822B /* GitChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2165A292AA33A290030822B /* GitChatTests.swift */; };
 		C2165A342AA33A290030822B /* GitChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2165A332AA33A290030822B /* GitChatUITests.swift */; };
 		C2165A362AA33A290030822B /* GitChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2165A352AA33A290030822B /* GitChatUITestsLaunchTests.swift */; };
+		C2AB882E2AA447EE00164809 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2AB88242AA447EE00164809 /* Localizable.strings */; };
+		C2AB882F2AA447EE00164809 /* PreviewDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB88282AA447EE00164809 /* PreviewDevice.swift */; };
+		C2AB88302AA447EE00164809 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB88292AA447EE00164809 /* View+Extensions.swift */; };
+		C2AB88312AA447EE00164809 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB882C2AA447EE00164809 /* Strings.swift */; };
+		C2AB88322AA447EE00164809 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB882D2AA447EE00164809 /* Assets.swift */; };
+		C2EBAD712AA37C3E00611E2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2165A1A2AA33A280030822B /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		C2165A2F2AA33A290030822B /* GitChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2165A332AA33A290030822B /* GitChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitChatUITests.swift; sourceTree = "<group>"; };
 		C2165A352AA33A290030822B /* GitChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2AB88252AA447EE00164809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C2AB88282AA447EE00164809 /* PreviewDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewDevice.swift; sourceTree = "<group>"; };
+		C2AB88292AA447EE00164809 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		C2AB882C2AA447EE00164809 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		C2AB882D2AA447EE00164809 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				C2165A182AA33A280030822B /* GitChatApp.swift */,
-				C2165A1A2AA33A280030822B /* ContentView.swift */,
-				C2165A1C2AA33A290030822B /* Assets.xcassets */,
+				C2AB88222AA447EE00164809 /* Common */,
+				C2EBAD6F2AA37C1700611E2A /* Models */,
 				C2165A1E2AA33A290030822B /* Preview Content */,
+				C2165A422AA357850030822B /* Resources */,
+				C2EBAD702AA37C2100611E2A /* Scenes */,
 			);
 			path = GitChat;
 			sourceTree = "<group>";
@@ -127,6 +139,81 @@
 			path = GitChatUITests;
 			sourceTree = "<group>";
 		};
+		C2165A422AA357850030822B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2165A1C2AA33A290030822B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2AB88222AA447EE00164809 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB88232AA447EE00164809 /* Localizations */,
+				C2AB88262AA447EE00164809 /* Extensions */,
+				C2AB882A2AA447EE00164809 /* Helpers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C2AB88232AA447EE00164809 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB88242AA447EE00164809 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		C2AB88262AA447EE00164809 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB88272AA447EE00164809 /* SwiftUI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C2AB88272AA447EE00164809 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB88282AA447EE00164809 /* PreviewDevice.swift */,
+				C2AB88292AA447EE00164809 /* View+Extensions.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		C2AB882A2AA447EE00164809 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB882B2AA447EE00164809 /* SwiftGen */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C2AB882B2AA447EE00164809 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB882C2AA447EE00164809 /* Strings.swift */,
+				C2AB882D2AA447EE00164809 /* Assets.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		C2EBAD6F2AA37C1700611E2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C2EBAD702AA37C2100611E2A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C2165A1A2AA33A280030822B /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +221,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2165A392AA33A290030822B /* Build configuration list for PBXNativeTarget "GitChat" */;
 			buildPhases = (
+				C2AB88332AA4483100164809 /* Run Script: SwiftGen */,
+				C2AB88342AA4485900164809 /* Run Script: SwiftLint */,
 				C2165A112AA33A280030822B /* Sources */,
 				C2165A122AA33A280030822B /* Frameworks */,
 				C2165A132AA33A280030822B /* Resources */,
@@ -233,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2165A202AA33A290030822B /* Preview Assets.xcassets in Resources */,
+				C2AB882E2AA447EE00164809 /* Localizable.strings in Resources */,
 				C2165A1D2AA33A290030822B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,12 +343,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2AB88332AA4483100164809 /* Run Script: SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Skip SwiftGen when archiving\nif [ \"${ACTION}\" = 'install' ]; then\n  echo 'When archiving, skip SwiftGen.'\n  exit 0\nfi\n\n# Set Apple Silicon HomeBrew location\nif [ -d '/opt/homebrew/bin/' ]; then\n  export PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nif type swiftgen >/dev/null 2>&1; then\n  swiftgen\nelse\n  echo 'warning: SwiftGen not installed. Download it from https://github.com/SwiftGen/SwiftGen'\nfi\n";
+		};
+		C2AB88342AA4485900164809 /* Run Script: SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Skip SwiftLint when archiving\nif [ \"${ACTION}\" = 'install' ]; then\n  echo 'When archiving, skip SwiftLint.'\n  exit 0\nfi\n\n# Set Apple Silicon HomeBrew location\nif [ -d '/opt/homebrew/bin/' ]; then\n  export PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nif type swiftlint >/dev/null 2>&1; then\n  swiftlint\nelse\n  echo 'warning: SwiftLint not installed, download it from https://github.com/realm/SwiftLint'\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2165A112AA33A280030822B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2165A1B2AA33A280030822B /* ContentView.swift in Sources */,
+				C2AB882F2AA447EE00164809 /* PreviewDevice.swift in Sources */,
+				C2EBAD712AA37C3E00611E2A /* ContentView.swift in Sources */,
+				C2AB88322AA447EE00164809 /* Assets.swift in Sources */,
+				C2AB88312AA447EE00164809 /* Strings.swift in Sources */,
+				C2AB88302AA447EE00164809 /* View+Extensions.swift in Sources */,
 				C2165A192AA33A280030822B /* GitChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +429,17 @@
 			targetProxy = C2165A302AA33A290030822B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2AB88242AA447EE00164809 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2AB88252AA447EE00164809 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C2165A372AA33A290030822B /* Debug */ = {
