@@ -29,6 +29,7 @@ extension ChatView {
 	var messageList: some View {
 		List(viewModel.messages) { message in
 			ChatBubble(message: message)
+				.listRowSeparator(.hidden)
 		}
 		.background(.white)
 		.scrollContentBackground(.hidden)
