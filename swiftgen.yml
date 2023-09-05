@@ -18,3 +18,11 @@ xcassets:
       output: Assets.swift
       params:
         publicAccess: true
+
+# Static Data assets
+json:
+  inputs:
+    - Preview Content/Data
+  outputs:
+    - templateName: runtime-swift5
+      output: JSON.swift

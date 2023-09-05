@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  GitChat
+
+  Created by Yassine ElBadaoui on 2023/09/02.
+  Copyright © 2023 ElBadaoui. All rights reserved.
+*/
+
+home.title = "رسائل GitHub";
+
+// Chat
+chat.send = "إرسال";
+chat.textfieldPlaceholder = "أ ب ت";
+
+// Networking
+networkingError.generalError = "حدث خطأ عام. يرجى إعادة المحاولة بعد بضع دقائق.";
+networkingError.invalidURL = "حدث خطأ مطور. الرجاء الإبلاغ عن هذا الخطأ لمطور التطبيق.";
+networkingError.rateLimitReached = "تم تجاوز حد الاستخدام الخاص بك. يرجى إعادة المحاولة بعد بضع دقائق.";
+
+// Common
+common.retry = "حاول مرة أخرى لاحقاً.";

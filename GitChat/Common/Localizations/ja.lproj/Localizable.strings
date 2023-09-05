@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  GitChat
+
+  Created by Yassine ElBadaoui on 2023/09/02.
+  Copyright © 2023 ElBadaoui. All rights reserved.
+*/
+
+// Home
+home.title = "GitHub DM";
+
+// Chat
+chat.send = "送信";
+chat.textfieldPlaceholder = "ああ";
+
+// Networking
+networkingError.generalError = "一般的なエラーが発生しました。数分後に再試行してください。";
+networkingError.invalidURL = "開発者エラーが発生しました。このエラーをアプリ開発者に報告してください。";
+networkingError.rateLimitReached = "使用制限に達しました。数分後に再試行してください。";
+
+// Common
+common.retry = "後ほど再度試してください。";

@@ -12,7 +12,7 @@ import SwiftUI
 struct GitChatApp: App {
 	var body: some Scene {
 		WindowGroup {
-			ContentView()
+			ContentView(viewModel: .init())
 		}
 	}
 }
